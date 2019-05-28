@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    background-color: #5E2128;
+}
+
+/* Text Styles */
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size: 1em;
+}
+/* List Styles */
+.list {
+    list-style-type: none;
+}
+
+/* Link Styles */ 
+.link {
+    color: #fff;
+    text-decoration: none; 
+    border-bottom: 1px dotted #fff;
+}
+
+/* Style buttons */
+.btn {
+  background-color: #86605e;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #0B0509;
+}
+
+/* Header */
+.header {
+  margin: 0 auto;
+  white-space: nowrap;
+  width: 100%;
+  height: 92.5vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: url('./888-min.jpg') repeat fixed;
+  background-position: 50% 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  font-size: 0;
+}
+.header-image {
+  width: 40px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 4;
+  padding: 2px;
+  transition: all 1.3s ease-in-out;
+  background: url('./999-min.jpg') repeat fixed;
+  background-size: cover;
+  background-position: 50% 100%;
+  border-radius: 0%;
+}
+.header-image:hover {
+  transition: all 0s linear;
+  opacity: 0;
+}
+.heading {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 10px;
+  top: 73%;
+  color: #fff;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    overflow: hidden;
+    background-image: linear-gradient(#000, #5E2128, #86605e);
+  }
+  
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 15px 9px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .section--content {
+    padding-top: 60px;
+  }
+
+.navbar a:hover {
+    background-color:#000;
+    cursor: pointer;
+  }
+  
+.active {
+    background-color: #000;
+  }
+
+/* Main */
+section {
+    width: 100%;
+    height: 30%;
+  }
+.section--img {
+    background: url('./111-min.jpg') no-repeat center / cover;
+    background-attachment: fixed;
+}
+.section--text {
+    padding: 5% 8%;
+    height: auto;
+  }
+.section--title {
+    margin: 0;
+    padding-bottom: 1em;
+  }
+.section--description {
+    font-size: 1em;
+  }
+  
+/* Career Styles */ 
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1em;
+  margin: 0.5em;
+  color: #fff;
+  background: #86605e;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #5E2128;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+
+.collapsible-content .content-inner {
+  background: #86605e;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: .5rem 1rem;
+}
+
+
+/* Certificates Styles */
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+
+/* Skills Styles */
+.skills {
+  text-align: right; 
+  padding: 7px; 
+  color: #fff; 
+}
+
+.skills--subheading {
+  font-size: 1.2em;
+  padding: 0.5em 0;
+  font-weight: bold;
+}
+
+.html {width: 90%; background-color: #86605e;} 
+.css {width: 80%; background-color: #86605e;} 
+.js {width: 65%; background-color: #86605e;} 
+.german {width: 100%; background-color: #86605e;} 
+.english {width: 90%; background-color: #86605e;} 
+.french {width: 40%; background-color: #86605e;} 
+.italian {width: 30%; background-color: #86605e;} 
+
+/* Style Footer */
+.footerImg {
+  width: 100%;
+  height: 30%;
+  background: url('./222-min.jpg') no-repeat center / cover;
+}
+
+.darken {
+  position: relative;
+}
+
+.darken:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer--description p {
+  text-align: center;
+  padding: 2.5%;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.btnFooter {
+  border-radius: 4px;
+  background-color: #86605e;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Responsive */
+@media screen and (max-width: 692px) {
+  .body {
+    max-width: 692px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .section--img {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-image { display: none;}
+}
+
+  @media screen and (max-width: 692px) {
+    .navbar a {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .resumeFile {
+      display: none;}
+  }
+
+  @media screen and (min-width: 900px) {
+    .btnResume {
+      display: none;}
+  }
