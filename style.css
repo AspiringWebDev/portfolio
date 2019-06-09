@@ -236,7 +236,7 @@ input[type="checkbox"] {
   margin-right: 0.7rem;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid transparent;
+  border-left: 5px solid #fff;
   vertical-align: middle;
   transform: translateY(-2px);
   transition: transform 0.2s ease-out;
