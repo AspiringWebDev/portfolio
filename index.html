@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>My Portfolio</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Personal portfolio webpage to showcase my skills, education, career.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <meta name="author" content="Amelie Schürer">
   <!-- css -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -16,10 +14,10 @@
 
 <body>
 
-  <header id="home"></header>
+  <header></header>
 
-  <navigation class="section--nav">
-    <div class="navbar">
+  <div class="navbar section--nav">
+    <nav>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <a class="nav" id="#information"><i class="fa fa-fw fa-female"></i> About me</a>
       <a class="nav" id="#web"><i class="fa fa-fw fa-code"></i> Web Development</a>
@@ -29,29 +27,29 @@
       <a class="nav" id="#skills"><i class="fa fa-fw fa-book"></i> Skills</a>
       <a class="nav" id="#resume"><i class="fa fa-fw fa-file"></i> Resume</a>
       <a class="nav" id="#contact"><i class="fa fa-fw fa-address-card"></i> Contact</a>
-    </div>
-  </navigation>
+    </nav>
+  </div>
 
-  <section class="section--img" id="information"></section>
+  <div class="section section--img img--one" id="information"></div>
 
   <div class="section--text">
     <h2 class="section--title">About me</h2>
     <p class="section--description">Known for my hunger for knowledge and determination to turn information into
       action.<br>
       <br>
-      I would considers myself a ‘forever student,’ eager to both build on my academic foundations in web development
-      and stay in tune with the latest developments through continued coursework and personal
+      I consider myself a ‘forever student,’ eager to both build on my academic foundations in web development
+      and stay in tune with the latest developments through continuous coursework and personal
       self-improvement.<br>
       <br>
       I strongly believe that mindfulness and balance is the key to success in the workplace - a tenet I live out
-      through my interests in camping, fitness, photography, meditation, reading and travelling.<br>
+      through my interests in camping, fitness photography, meditation, reading and travelling.<br>
       <br>
-      European-bred I was able to experience many different cultures, which inspired me to learn multiple languages
+      Born and raised in Europe, I was able to experience many different cultures, which inspired me to learn multiple
+      languages
       and why I like working in intercultural teams.<br>
-      <br>
   </div>
 
-  <section class="section--img" id="web"></section>
+  <div class="section section--img img--two" id="web"></div>
 
   <div class="section--text">
     <h2 class="section--title">Web Development</h2>
@@ -67,7 +65,7 @@
       JavaScript, I am self-thought and spend a lot of time perfecting my skills and working on certificates.<br></p>
   </div>
 
-  <section class="section--img" id="career"></section>
+  <div class="section section--img img--three" id="career"></div>
 
   <div class="section--text">
     <h2 class="section--title">Career</h2>
@@ -78,43 +76,51 @@
         <label for="collapsible" class="lbl-toggle">Burger Automation Technology</label>
         <div class="collapsible-content">
           <div class="content-inner">
-            <p>
-              Lead the project to bring in a new enterprise resource planning system: mapping of the important business
-              processes, determining the project scope, implementation, communication with the management and the
-              software
-              development department <br>
-              Chiefly responsible for the product costing analysis <br>
-              Drive process quality improvements<br>
-              Involved in the divisions controlling, acquisition, IT<br>
-            </p>
+            <ul>
+              <li>Lead the project to bring in a new enterprise resource planning
+                system: mapping of the important business
+                processes, determining the project scope, implementation, communication with the management and the
+                software
+                development department</li>
+              <li> Chiefly responsible for the product costing analysis </li>
+              <li> Drive process quality improvements</li>
+              <li> Involved in the divisions controlling, acquisition, IT</li>
+            </ul>
           </div>
         </div>
         <div class="wrap-collabsible">
           <input id="collapsibleTwo" class="toggle" type="checkbox">
-          <label for="collapsibleTwo" class="lbl-toggle">Twoeyes</label>
+          <label for="collapsibleTwo" class="lbl-toggle">Twoeyes Software Solutions</label>
           <div class="collapsible-content">
             <div class="content-inner">
-              <p>
-                Chiefly responsible for client management and client account fulfillment (back-end team project
-                management) <br>
-                Drove process quality improvements<br>
-                Client interface consultant responsible for the supervision of projects: budget planning, meeting
-                deliverables, quality testing, client support, management of the work plan, distribution of tasks for
-                the
-                developer<br>
-                Lead the project to bring in a new financial, internal controlling system: needs assessment, determining
-                the
-                project scope, research of potential solutions, selection decision process, prototyping, implementation,
-                communication with the key stakeholders and decision makers<br>
-                Assistance with the relaunch of the company’s website<br>
-                Reorganization and actualization of the client accounts: new set-up of existing contracts, revaluation
-                of
-                the contract values, allocation of existing contracts to certain clients<br>
-                Financial assistance oversight for the invoicing: invoice control, monthly billing, adjustment of the
-                debit
-                withdrawal<br>
-                Involved in the divisions marketing, sales, client consultancy, managing of the backend team<br>
-              </p>
+              <ul>
+                <li> Chiefly responsible for client management and client account
+                  fulfillment (back-end team project
+                  management)</li>
+                <li> Drove process quality improvements</li>
+                <li> Client interface consultant responsible for the supervision of
+                  projects: budget planning, meeting
+                  deliverables, quality testing, client support, management of the work plan, distribution of tasks for
+                  the
+                  developer</li>
+                <li> Lead the project to bring in a new financial, internal
+                  controlling system: needs assessment, determining
+                  the
+                  project scope, research of potential solutions, selection decision process, prototyping,
+                  implementation,
+                  communication with the key stakeholders and decision makers</li>
+                <li> Assistance with the relaunch of the company’s website</li>
+                <li> Reorganization and actualization of the client accounts: new
+                  set-up of existing contracts, revaluation
+                  of
+                  the contract values, allocation of existing contracts to certain clients</li>
+                <li> Financial assistance oversight for the invoicing: invoice
+                  control, monthly billing, adjustment of the
+                  debit
+                  withdrawal</li>
+                <li> Involved in the divisions marketing, sales, client
+                  consultancy, managing of the backend team</li>
+              </ul>
             </div>
           </div>
           <div class="wrap-collabsible">
@@ -122,15 +128,19 @@
             <label for="collapsibleThree" class="lbl-toggle">University of Applied Sciences Kempten</label>
             <div class="collapsible-content">
               <div class="content-inner">
-                <p>
-                  Acquisition and description for the procedure for the preparation of the seminar plans for the
-                  organization
-                  of the study program<br>
-                  Creation of editorial guidelines for the study plan in the self-service portal<br>
-                  Compilation of the curriculum of the Master’s Degree programs of the faculty of Computer Science<br>
-                  Summary and presentation of the statistics of the student numbers for the strategy of the faculty<br>
-                  Gathering information and doing Internet research<br>
-                </p>
+                <ul>
+                  <li> Acquisition and description for the procedure for the
+                    preparation of the seminar plans for the
+                    organization
+                    of the study program</li>
+                  <li> Creation of editorial guidelines for the study plan in the
+                    self-service portal</li>
+                  <li> Compilation of the curriculum of the Master’s Degree
+                    programs of the faculty of Computer Science</li>
+                  <li>Summary and presentation of the statistics of the student
+                    numbers for the strategy of the faculty</li>
+                  <li> Gathering information and doing Internet research</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -140,26 +150,25 @@
   </div>
 
 
-  <section class="section--img" id="education"></section>
+  <div class="section section--img img--four" id="education"></div>
 
   <div class="section--text">
     <h2 class="section--title">Education</h2>
-    <p class="section--description">
+    <div class="section--description">
       <h3>2019</h3>
-      Currently learning: JavaScript
+      Currently studying: JavaScript
       <br>Building of my resume web page: expected completion May 2019
       <h3>2018</h3>
-      Learning: HTML5, CSS3
+      Studying: HTML5, CSS3
       <h3>2015</h3>
       Bachelor of Arts: Business Administration
-      University of Applied Sciences Kempten – Kempten, Bavaria (Germany)
+      University of Applied Sciences Kempten (Bavaria/Germany)
       <h3>2014</h3>
       Passed the Trainer Aptitude Examination (IHK)
       <h3>2013</h3>
       First area of studies: project management
       Achieved the project management basic certificate (GPM)<br>
       Second area of studies: process management
-      </ul>
       <h3>Electives</h3>
       <ul class="list">
         <li>Technical English</li>
@@ -167,10 +176,10 @@
         <li>Business English Conversation </li>
         <li>Vocational and occupational education</li>
       </ul>
-    </p>
+    </div>
   </div>
 
-  <section class="section--img" id="certificates"></section>
+  <div class="section section--img img--five" id="certificates"></div>
 
   <div class="section--text">
     <h2 class="section--title">Certificates</h2>
@@ -178,39 +187,38 @@
       working
       on new certificates and
       new
-      skills to add to my portfolio. Constant learning and evolving is very important to me.</p>
-    <base target="_blank" />
+      skills to add to my portfolio. Constant learning and evolving is very important to me.</p><br>
     <div class="container">
       <div class="box">
-        <img src="Certificate JavaScript.png">
+        <img src="Certificate JavaScript.png" alt="Certificate JavaScript">
       </div>
       <div class="box">
-        <img src="Certificate JavaScript2.jpg">
+        <img src="Certificate JavaScript2.jpg" alt="Certificate JavaScript">
       </div>
       <div class="box">
-        <img src="Certificate JavaScript3.jpg">
+        <img src="Certificate JavaScript3.jpg" alt="Certificate JavaScript">
       </div>
       <div class="box">
-        <img src="Certificate Responsive Web Design.png">
+        <img src="Certificate Responsive Web Design.png" alt="Certificate Responsive Web Design">
       </div>
       <div class="box">
-        <img src="Certificate Responsive Websites.jpg">
+        <img src="Certificate Responsive Websites.jpg" alt="Certificate Responsive Websites">
       </div>
       <div class="box">
-        <img src="Certificate Web Design.jpg">
+        <img src="Certificate Web Design.jpg" alt="Certificate Web Design">
       </div>
     </div>
+    <button class=" btn btnCertificate"><i class="fa fa-fw fa-eye"></i> View my Certificates here</button>
   </div>
 
-  <section class="section--img" id="skills"></section>
+  <div class="section section--img img--six" id="skills"></div>
 
   <div class="section--text">
     <h2 class="section--title">Skills</h2>
-    <p class="section--description">
-      <div class="content">
+    <div class="section--description">
+      <div class="content left">
         <br>
         <h3>Coding</h3>
-        <br>
         <p>HTML</p>
         <div class="container--skills">
           <div class="skills html">90%</div>
@@ -225,9 +233,9 @@
         <div class="container--skills">
           <div class="skills js">65%</div>
         </div>
-        <br>
+
         <h3>Languages</h3>
-        <br>
+
         <p>German</p>
         <div class="container--skills">
           <div class="skills german">Native Language</div>
@@ -248,37 +256,49 @@
           <div class="skills italian">Alright</div>
         </div>
       </div>
-    </p>
+    </div>
   </div>
 
-  <section class="section--img" id="resume"></section>
+  <div class="section section--img img--seven" id="resume"></div>
 
   <div class="section--text">
     <h2 class="section--title">Resume</h2>
     <p class="section--description">Please feel free to take a look at my resume. Everything you need to know is
       compiled in there.</p><br>
-    <object class="resumeFile"><embed src="Resume.pdf" width="700" height="375" type="application/pdf"></object>
-    <button class=" btn btnResume"><i class="fa fa-fw fa-eye"></i> View my Resume here</button> 
+    <object class="resumeFile" data="PDF.pdf" width="700" height="375" type="application/pdf"></object>
+    <button class=" btn btnResume"><i class="fa fa-fw fa-eye"></i> View my Resume here</button>
   </div>
 
-  <section class="section--img" id="contact"></section>
+  <div class="section section--img img--eight" id="contact"></div>
 
   <div class="section--text">
     <h2 class="section--title">Contact</h2>
-    <p class="section--description">I am interested in a new challenge. You can contact me via <a class="link"
-        href="mailto:amelie.schuerer@web.de">email</a> and I will get back to you as soon as possible.</p>
+    <p class="section--description">Let's do this together! I am looking for new challenges.
+      Write me if you are looking for a highly motivated problem solver.</p><br>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="mail.jpg" alt="mailbox">
+        </div>
+        <div class="flip-card-back">
+          <h3>Come say hi!</h3>
+          <p>Feel free to contact me and I will get back to you as soon as possible.</p><br>
+          <p><a href="mailto:amelie.schuerer@web.de">amelie.schuerer@web.de</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 
-<footer class="footerImg darken footer--description">
-        <p>© Copyright 2019. All rights reserved. 
-            <br><br>
-            Build with <i class="fa fa-fw fa-heart"></i> in Germany.
-            <br><br>
-            <button class="btnFooter footerNav">
-            <a class="fnav" id="#home"><i class="fa fa-fw fa-home"></i> Home</a>
-            </button>
-          </p>
-</footer>
+
+  <footer class="footerImg darken footer--description">
+    <p>© Copyright 2019. All rights reserved.
+      <br><br>
+      Built with <i class="fa fa-fw fa-heart"></i> in Germany.
+      <br><br>
+      <button class="btn btnFooter footerNav" id="#home"><i class="fa fa-fw fa-home"></i> Home
+      </button>
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 
